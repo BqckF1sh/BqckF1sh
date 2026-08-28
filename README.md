@@ -16,7 +16,7 @@
 
 ---
 
-Data Science & AI student. Machine learning, computer vision, and autonomous systems — currently on a Formula Student driverless team. Always up for interesting problems.
+Data Science & AI student. Currently teaching 200 kg of carbon fibre to see cones and remember where they were. It gets it right most of the time.
 
 ## 🚀 Projects
 
