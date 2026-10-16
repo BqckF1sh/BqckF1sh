@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="Agent boot log">
+  <defs>
+    <style>
+      text { font-family: 'JetBrains Mono','Fira Code','SF Mono',Consolas,'DejaVu Sans Mono',monospace; font-size: 17px; fill: #9aa7ba; }
+      .ttl { font-size: 13px; letter-spacing: 2px; fill: #5c6a7e; }
+      .p   { fill: #ff2bd6; }
+      .cmd { fill: #f2f6ff; }
+      .ok  { fill: #b6ff00; }
+      .wr  { fill: #ffb800; }
+      .k   { fill: #00f0ff; }
+      .d   { fill: #3a4558; }
+      .ln  { opacity: 0; animation: in .01s forwards; }
+      .l1{animation-delay:.3s} .l2{animation-delay:.9s} .l3{animation-delay:1.4s} .l4{animation-delay:1.9s}
+      .l5{animation-delay:2.4s} .l6{animation-delay:2.9s} .l7{animation-delay:3.5s} .l8{animation-delay:4.1s}
+      @keyframes in { to { opacity: 1 } }
+      .blink { animation: bl 1s infinite steps(1) 4.1s; }
+      @keyframes bl { 50% { opacity: 0 } }
+    </style>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity=".03"/>
+    </pattern>
+    <linearGradient id="edge" x1="0" x2="1">
+      <stop offset="0" stop-color="#00f0ff"/>
+      <stop offset="1" stop-color="#ff2bd6"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="328" rx="6" fill="#07070c" stroke="url(#edge)" stroke-opacity=".55"/>
+  <rect x="1" y="1" width="1198" height="36" rx="6" fill="#0d0d16"/>
+  <rect x="1" y="30" width="1198" height="7" fill="#0d0d16"/>
+  <g>
+    <rect x="20" y="14" width="10" height="10" fill="#ff2bd6"/>
+    <rect x="38" y="14" width="10" height="10" fill="#00f0ff" opacity=".7"/>
+    <rect x="56" y="14" width="10" height="10" fill="#3a4558"/>
+  </g>
+  <text class="ttl" x="600" y="24" text-anchor="middle">agent@bqckf1sh : ~/core — tty0</text>
+
+  <g xml:space="preserve">
+    <text class="ln l1" x="28" y="74"><tspan class="p">❯ </tspan><tspan class="cmd">./boot --agent bqckf1sh --mode autonomous</tspan></text>
+    <text class="ln l2" x="28" y="106"><tspan class="d">[</tspan><tspan class="ok"> ok </tspan><tspan class="d">]</tspan> identity <tspan class="d">.................</tspan> <tspan class="k">frank · data science &amp; ai student</tspan></text>
+    <text class="ln l3" x="28" y="134"><tspan class="d">[</tspan><tspan class="ok"> ok </tspan><tspan class="d">]</tspan> perception.stack <tspan class="d">.........</tspan> <tspan class="k">cones: detected</tspan></text>
+    <text class="ln l4" x="28" y="162"><tspan class="d">[</tspan><tspan class="ok"> ok </tspan><tspan class="d">]</tspan> slam.module <tspan class="d">..............</tspan> <tspan class="k">remembers where they were (mostly)</tspan></text>
+    <text class="ln l5" x="28" y="190"><tspan class="d">[</tspan><tspan class="ok"> ok </tspan><tspan class="d">]</tspan> runtime <tspan class="d">..................</tspan> <tspan class="k">python · c++ · ros 2 · pytorch</tspan></text>
+    <text class="ln l6" x="28" y="218"><tspan class="d">[</tspan><tspan class="ok"> ok </tspan><tspan class="d">]</tspan> chassis <tspan class="d">..................</tspan> <tspan class="k">200 kg carbon fibre, driverless</tspan></text>
+    <text class="ln l7" x="28" y="246"><tspan class="d">[</tspan><tspan class="wr"> !! </tspan><tspan class="d">]</tspan> sleep.service <tspan class="d">............</tspan> <tspan class="wr">not found — continuing anyway</tspan></text>
+    <text class="ln l8" x="28" y="290"><tspan class="p">❯ </tspan><tspan class="cmd">awaiting instructions </tspan><tspan class="k blink">█</tspan></text>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="328" rx="6" fill="url(#scan)"/>
+</svg>
